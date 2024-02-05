@@ -1,7 +1,7 @@
 <?php
 
 // Specify the ARN of your Step Function
-$step_function_arn = 'arn:aws:states:ap-south-1:304003606207:stateMachine:AutomatedEC2Management';
+$step_function_arn = '';
 
 // Check if the $step_function_arn is not empty
 if (empty($step_function_arn)) {
@@ -13,8 +13,8 @@ function triggerStepFunction() {
     global $step_function_arn;
 
     // Specify AWS credentials
-    putenv("AWS_ACCESS_KEY_ID=AKIAUNSAG427RCW6PBMW");
-    putenv("AWS_SECRET_ACCESS_KEY=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");
+    putenv("AWS_ACCESS_KEY_ID=");
+    putenv("AWS_SECRET_ACCESS_KEY=");
 
     // Specify the full path to the aws executable
     $aws_executable = "/usr/local/bin/aws";
